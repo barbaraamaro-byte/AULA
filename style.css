@@ -1,10 +1,10 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #030a16;        /* Azul escuro profundo (fundo) */
+    --cor-principal: #0a192f;    /* Azul marinho escuro (caixa principal) */
+    --cor-secundaria: #112240;   /* Azul intermediário (botões) */ 
+    --cor-destaque: #00f0ff;     /* Azul ciano neon brilhante (títulos e detalhes) */
+    --cor-hover: #0077ff;        /* Azul elétrico (efeito ao passar o mouse) */
+    --cor-texto: #e6f1ff;        /* Azul cristalino muito claro (textos) */
 }
 
 body {
@@ -14,30 +14,72 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.15);
+    border: 1px solid rgba(0, 240, 255, 0.3);
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.caixa-perguntas {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
-    border: none;
-    border-radius: 15px;
-    padding: 15px;
-    transition: background-color 0.3s;
+    border: 1px solid rgba(0, 240, 255, 0.25);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    line-height: 1.4;
 }
 
-button:hover{
-    background-color: var(--cor-destaque);
-    color: var(--cor-principal);
+button:hover {
+    background-color: var(--cor-hover);
+    color: #ffffff;
+    border-color: var(--cor-destaque);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 240, 255, 0.35);
+}
+
+.texto-resultado {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cor-texto);
+    text-align: justify;
+    background: rgba(17, 34, 64, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--cor-destaque);
 }
