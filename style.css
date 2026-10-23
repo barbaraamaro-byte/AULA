@@ -29,7 +29,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Efeito de fundo brilhante para dar profundidade */
 body::before {
     content: '';
     position: absolute;
