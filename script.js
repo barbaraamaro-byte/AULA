@@ -6,77 +6,70 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Enquanto explorava a antiga biblioteca da sua cidade, você encontra um grimório lendário perdido há séculos. Ele promete conceder conhecimento mágico instantâneo a qualquer leitor. Qual o seu primeiro pensamento?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: 
-                    "afirmacao"
-            ]
+                texto: "Isso é perigoso! Magia sem esforço sempre tem um custo.",
+                afirmacao: "Ao encontrar o grimório lendário, você se mostrou cauteloso diante do poder imediato da magia."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmacao"
-            }           
-            
-        ]
-    },
-    {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial (IA), uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre elaIA. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de tecnologia em sala de aula. Qual atitude você toma?",
-        alternativas: [
-            {
-                texto:"Utilizar uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento",
-                afirmacao:"afirmacao"
-            },
-            {
-                texto: "Escrever o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao:"afirmacao"
+                texto: "Isso é incrível! Posso aprender em dias o que magos levam anos para dominar.",
+                afirmacao: "Ao encontrar o grimório lendário, você vislumbrou um universo de possibilidades e aprendizado sem limites."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "O Mestre do Conclave Arcano descobre sua descoberta e exige que você escreva um tratado sobre a influência dos livros antigos na magia moderna. Como você realiza essa pesquisa?",
         alternativas: [
             {
-                texto:"Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao:"afirmacao"
+                texto: "Utilizar um feitiço de consulta rápida para resumir tomos esquecidos e extrair apenas as informações mais diretas.",
+                afirmacao: "Na hora do estudo, preferiu a eficiência das artes arcanas para sintetizar séculos de sabedoria."
             },
             {
-                texto:"Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao:"afirmacao"
+                texto: "Consultar os arquivistas mais velhos, ler os manuscritos originais e debater com outros aprendizes de magia.",
+                afirmacao: "Na hora do estudo, buscou o conhecimento na experiência humana e na leitura atenta dos velhos manuscritos."
             }
-            
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "No Grande Conselho de Magos, surge um debate acalorado: os autômatos mágicos e runas de automação vão substituir os jovens aprendizes e escribas. Como você se posiciona?",
         alternativas: [
             {
-                texto:"Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao:"afirmacao"
+                texto: "Defende que a magia automatizada é perigosa, pois tira o propósito e o ganho de vida dos jovens escribas e artesãos.",
+                afirmacao: "No Conselho, posicionou-se a favor da tradição e da proteção dos escribas contra a automação desmedida."
             },
             {
-                texto:"Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao:"afirmacao"
+                texto: "Defende que os autômatos libertam os magos das tarefas repetitivas, permitindo focar em feitiços mais complexos e na expansão do saber.",
+                afirmacao: "No Conselho, argumentou que o avanço arcano abre novas portas e liberta a mente humana para criações maiores."
             }
-            
         ]
     },
     {
-        enunciado: " Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda de uma IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz?",
+        enunciado: "Ao final da assembleia, você precisa criar um selo mágico de proteção que represente o seu ideal de futuro para o reino. Como você o desenvolve?",
         alternativas: [
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao:"afirmacao"
+                texto: "Desenhar o selo à mão utilizando tintas de alquimia tradicional e penas de fênix.",
+                afirmacao: "Para simbolizar suas ideias, moldou um selo único usando a arte tradicional e pigmentos alquímicos."
             },
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao:"afirmacao"
+                texto: "Gerar o selo utilizando uma matriz arcana de feitiço automatizado que combina geometrias perfeitas.",
+                afirmacao: "Para simbolizar suas ideias, conjurou um selo preciso através de matrizes arcanas de última geração."
             }
-            
-            
         ]
     },
+    {
+        enunciado: "Você e seu grupo de aventureiros recebem a missão de traduzir uma profecia sobre dragões. Um colega usou uma poção de tradução automática sem revisar o sentido das palavras antigas. O que você faz?",
+        alternativas: [
+            {
+                texto: "Alertar o grupo que magia de tradução pode cometer erros graves de interpretação, e que a revisão humana e o conhecimento histórico são indispensáveis.",
+                afirmacao: "Frente a uma profecia crítica, garantiu que a sabedoria e a revisão pessoal evitassem grandes desastres no reino."
+            },
+            {
+                texto: "Aceitar a tradução da poção como correta, afinal as poções mágicas são feitas com fórmulas exatas e economizam um tempo precioso.",
+                afirmacao: "Frente a uma profecia crítica, confiou no poder das fórmulas mágicas para acelerar a jornada do grupo."
+            }
+        ]
+    }
 ];
 
 let atual = 0; 
@@ -111,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "No ano de 1492 da Era Arcana...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = ""; 
 }
